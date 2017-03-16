@@ -1,0 +1,21 @@
+{
+    "aipgApp": {
+        "entryCategory" : {
+            "home": {
+                "title": "Entry Categories",
+                "createLabel": "Crează o nouă Entry Category",
+                "createOrEditLabel": "Crează sau editează o Entry Category"
+            },
+            "created": "O nouă Entry Category este creată cu identificatorul {{ param }}",
+            "updated": "O Entry Category este editată cu identificatorul {{ param }}",
+            "deleted": "O Entry Category este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Entry Category {{ id }}?"
+            },
+            "detail": {
+                "title": "Entry Category"
+            },
+            "name": "Name"
+        }
+    }
+}

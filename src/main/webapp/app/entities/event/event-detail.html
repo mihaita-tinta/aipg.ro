@@ -1,0 +1,47 @@
+
+<div>
+    <h2><span data-translate="aipgApp.event.detail.title">Event</span> {{vm.event.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="aipgApp.event.title">Title</span></dt>
+        <dd>
+            <span>{{vm.event.title}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.event.content">Content</span></dt>
+        <dd>
+            <span>{{vm.event.content}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.event.date">Date</span></dt>
+        <dd>
+            <span>{{vm.event.date | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.event.scheduled">Scheduled</span></dt>
+        <dd>
+            <span>{{vm.event.scheduled | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.event.location">Location</span></dt>
+        <dd>
+            <span>{{vm.event.location}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.event.eventCategory">Event Category</span></dt>
+        <dd>
+            <a ui-sref="event-category-detail({id:vm.event.eventCategory.id})">{{vm.event.eventCategory.name}}</a>
+        </dd>
+        <dt><span data-translate="aipgApp.event.user">User</span></dt>
+        <dd>
+            {{vm.event.user.login}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="event-detail.edit({id:vm.event.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,57 @@
+
+entity Event {
+	title String required,
+	content TextBlob required,
+	date ZonedDateTime required,
+	scheduled ZonedDateTime required,
+	location String required minlength(4)
+}
+
+entity Entry {
+	title String required,
+	content TextBlob required,
+	date ZonedDateTime required
+}
+
+entity Comment {
+	title String required,
+	content TextBlob required,
+	date ZonedDateTime required
+}
+entity Attachment {
+	title String required,
+	filepath String required,
+	date ZonedDateTime required
+}
+
+entity Tag {
+	name String required minlength(2)
+}
+
+entity EventCategory {
+	name String required minlength(2)
+}
+entity EntryCategory {
+	name String required minlength(2)
+}
+
+relationship OneToOne {
+	Entry{entryCategory(name)} to EntryCategory,
+	Event{eventCategory(name)} to EventCategory
+}
+relationship ManyToOne {
+	Event{user(login)} to User,
+	Entry{user(login)} to User,
+	Attachment{user(login)} to User,
+	Attachment{Event(event)} to Event,
+	Attachment{Entry(event)} to Entry,
+	Comment{Event(event)} to Event,
+	Comment{Entry(entry)} to Entry,
+	Comment{user(login)} to User
+}
+
+relationship ManyToMany {
+	Entry{tag(name)} to Tag{entry}
+}
+
+paginate Entry, Event, Tag with infinite-scroll

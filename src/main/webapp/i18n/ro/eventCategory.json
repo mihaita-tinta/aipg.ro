@@ -1,0 +1,21 @@
+{
+    "aipgApp": {
+        "eventCategory" : {
+            "home": {
+                "title": "Event Categories",
+                "createLabel": "Crează o nouă Event Category",
+                "createOrEditLabel": "Crează sau editează o Event Category"
+            },
+            "created": "O nouă Event Category este creată cu identificatorul {{ param }}",
+            "updated": "O Event Category este editată cu identificatorul {{ param }}",
+            "deleted": "O Event Category este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Event Category {{ id }}?"
+            },
+            "detail": {
+                "title": "Event Category"
+            },
+            "name": "Name"
+        }
+    }
+}

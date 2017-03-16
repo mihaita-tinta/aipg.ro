@@ -1,0 +1,26 @@
+{
+    "aipgApp": {
+        "entry" : {
+            "home": {
+                "title": "Entries",
+                "createLabel": "Crează o nouă Entry",
+                "createOrEditLabel": "Crează sau editează o Entry"
+            },
+            "created": "O nouă Entry este creată cu identificatorul {{ param }}",
+            "updated": "O Entry este editată cu identificatorul {{ param }}",
+            "deleted": "O Entry este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Entry {{ id }}?"
+            },
+            "detail": {
+                "title": "Entry"
+            },
+            "title": "Title",
+            "content": "Content",
+            "date": "Date",
+            "entryCategory": "Entry Category",
+            "user": "User",
+            "tag": "Tag"
+        }
+    }
+}

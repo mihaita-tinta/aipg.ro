@@ -1,0 +1,26 @@
+{
+    "aipgApp": {
+        "attachment" : {
+            "home": {
+                "title": "Attachments",
+                "createLabel": "Crează o nouă Attachment",
+                "createOrEditLabel": "Crează sau editează o Attachment"
+            },
+            "created": "O nouă Attachment este creată cu identificatorul {{ param }}",
+            "updated": "O Attachment este editată cu identificatorul {{ param }}",
+            "deleted": "O Attachment este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Attachment {{ id }}?"
+            },
+            "detail": {
+                "title": "Attachment"
+            },
+            "title": "Title",
+            "filepath": "Filepath",
+            "date": "Date",
+            "user": "User",
+            "event": "Event",
+            "entry": "Entry"
+        }
+    }
+}

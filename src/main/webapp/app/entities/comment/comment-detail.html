@@ -1,0 +1,43 @@
+
+<div>
+    <h2><span data-translate="aipgApp.comment.detail.title">Comment</span> {{vm.comment.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="aipgApp.comment.title">Title</span></dt>
+        <dd>
+            <span>{{vm.comment.title}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.comment.content">Content</span></dt>
+        <dd>
+            <span>{{vm.comment.content}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.comment.date">Date</span></dt>
+        <dd>
+            <span>{{vm.comment.date | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.comment.event">Event</span></dt>
+        <dd>
+            <a ui-sref="event-detail({id:vm.comment.event.id})">{{vm.comment.event.event}}</a>
+        </dd>
+        <dt><span data-translate="aipgApp.comment.entry">Entry</span></dt>
+        <dd>
+            <a ui-sref="entry-detail({id:vm.comment.entry.id})">{{vm.comment.entry.entry}}</a>
+        </dd>
+        <dt><span data-translate="aipgApp.comment.user">User</span></dt>
+        <dd>
+            {{vm.comment.user.login}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="comment-detail.edit({id:vm.comment.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

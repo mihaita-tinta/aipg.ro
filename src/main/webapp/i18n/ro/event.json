@@ -1,0 +1,27 @@
+{
+    "aipgApp": {
+        "event" : {
+            "home": {
+                "title": "Events",
+                "createLabel": "Crează o nouă Event",
+                "createOrEditLabel": "Crează sau editează o Event"
+            },
+            "created": "O nouă Event este creată cu identificatorul {{ param }}",
+            "updated": "O Event este editată cu identificatorul {{ param }}",
+            "deleted": "O Event este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Event {{ id }}?"
+            },
+            "detail": {
+                "title": "Event"
+            },
+            "title": "Title",
+            "content": "Content",
+            "date": "Date",
+            "scheduled": "Scheduled",
+            "location": "Location",
+            "eventCategory": "Event Category",
+            "user": "User"
+        }
+    }
+}

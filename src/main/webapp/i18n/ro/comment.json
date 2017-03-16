@@ -1,0 +1,26 @@
+{
+    "aipgApp": {
+        "comment" : {
+            "home": {
+                "title": "Comments",
+                "createLabel": "Crează o nouă Comment",
+                "createOrEditLabel": "Crează sau editează o Comment"
+            },
+            "created": "O nouă Comment este creată cu identificatorul {{ param }}",
+            "updated": "O Comment este editată cu identificatorul {{ param }}",
+            "deleted": "O Comment este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Comment {{ id }}?"
+            },
+            "detail": {
+                "title": "Comment"
+            },
+            "title": "Title",
+            "content": "Content",
+            "date": "Date",
+            "event": "Event",
+            "entry": "Entry",
+            "user": "User"
+        }
+    }
+}

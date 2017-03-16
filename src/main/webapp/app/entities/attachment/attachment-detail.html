@@ -1,0 +1,43 @@
+
+<div>
+    <h2><span data-translate="aipgApp.attachment.detail.title">Attachment</span> {{vm.attachment.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="aipgApp.attachment.title">Title</span></dt>
+        <dd>
+            <span>{{vm.attachment.title}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.attachment.filepath">Filepath</span></dt>
+        <dd>
+            <span>{{vm.attachment.filepath}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.attachment.date">Date</span></dt>
+        <dd>
+            <span>{{vm.attachment.date | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="aipgApp.attachment.user">User</span></dt>
+        <dd>
+            {{vm.attachment.user.login}}
+        </dd>
+        <dt><span data-translate="aipgApp.attachment.event">Event</span></dt>
+        <dd>
+            <a ui-sref="event-detail({id:vm.attachment.event.id})">{{vm.attachment.event.event}}</a>
+        </dd>
+        <dt><span data-translate="aipgApp.attachment.entry">Entry</span></dt>
+        <dd>
+            <a ui-sref="entry-detail({id:vm.attachment.entry.id})">{{vm.attachment.entry.event}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="attachment-detail.edit({id:vm.attachment.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
